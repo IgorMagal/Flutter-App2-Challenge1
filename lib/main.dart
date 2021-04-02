@@ -43,17 +43,21 @@ class _AppState extends State<App> {
             appBar: AppBar(
               title: Text('Assigment 1'),
             ),
-            body: Column(
+            body: Center(
+                child: Column(
               children: [
                 SizedBox(height: 50),
-                Text(_textList[_textIndex]),
+                Text(
+                  _textList[_textIndex],
+                  textAlign: TextAlign.center,
+                ),
                 SizedBox(height: 50),
                 ElevatedButton(
                     style: ButtonStyle(),
                     onPressed: _clickButton,
                     child: Text('Magic Button')),
               ],
-            )));
+            ))));
   }
 }
 // *******************************************************
