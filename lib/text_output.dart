@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 
-class OutputText extends StatelessWidget {
-  final String myText;
-  OutputText(this.myText);
+class TextOutput extends StatelessWidget {
+  final _mainText;
+
+  TextOutput(this._mainText);
 
   @override
   Widget build(BuildContext context) {
-    return Text(myText);
+    return Center(
+      child: Text(_mainText),
+    );
   }
 }

@@ -7,19 +7,18 @@ class TextControl extends StatefulWidget {
 }
 
 class _TextControlState extends State<TextControl> {
-  String _text = 'this is some gibberish txt..';
+  String _mainText = 'This is some amazingly simple text';
   @override
   Widget build(BuildContext context) {
     return Column(children: [
-      Text(_text),
+      TextOutput(_mainText),
       ElevatedButton(
           onPressed: () {
             setState(() {
-              _text = 'this is even more gibberish text!!';
+              _mainText = 'and the amazingly simple text changed!';
             });
-            OutputText(_text);
           },
-          child: Text('Magic Button'))
+          child: Text('Press me.'))
     ]);
   }
 }

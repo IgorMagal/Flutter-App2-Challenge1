@@ -8,10 +8,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-      appBar: AppBar(
-        title: Text('Assigment 1 - Change Txt'),
-      ),
-      body: TextControl(),
-    ));
+            appBar: AppBar(title: Text('Asignment 1 - Change Text')),
+            body: TextControl()));
   }
 }
